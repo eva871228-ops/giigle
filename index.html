@@ -2,65 +2,82 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <style>
+
 html, body{
-  margin:0;
-  padding:0;
-  background:white;
-  overflow:hidden;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background:white;
 }
 
-.phone{
-  position:relative;
-  width:100vw;
-  max-width:390px;
-  aspect-ratio:1170 / 2532;
-  margin:0 auto;
-  overflow:hidden;
+/* 整個頁面 */
+
+.page{
+    position:relative;
+
+    width:100vw;
+    max-width:390px;
+
+    margin:auto;
 }
+
+/* 背景圖 */
 
 .bg{
-  position:absolute;
-  Top:0;
-  Left:0;
-  width:100%;
-  height:100%;
-  object-fit:fill;
+    width:100%;
+    display:block;
 }
+
+/* 搜尋框 */
 
 .search{
-  position:absolute;
 
-  top:33.5%;
-  left:15.2%;
-  width:58%;
-  height:3.2%;
+    position:absolute;
 
-  font-size:15px;
-  border:none;
-  outline:none;
-  background:transparent;
-  color:#202124;
-  caret-color:#202124;
-  font-family:Arial, sans-serif;
+    top:33.2%;
+    left:13.5%;
+
+    width:58%;
+    height:3.8%;
+
+    font-size:15px;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    color:#202124;
+
+    caret-color:#202124;
+
+    font-family:Arial,sans-serif;
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="phone">
-  <img src="giigle.png" class="bg">
+<div class="page">
 
-  <form action="result.html">
-    <input
-      class="search"
-      type="text"
-      value="カオソーイチョコ"
-      autofocus>
-  </form>
+<img src="giigle.png" class="bg">
+
+<form action="ui.html">
+
+<input
+class="search"
+type="text"
+value="カオソーイチョコ"
+autofocus>
+
+</form>
+
 </div>
 
 </body>

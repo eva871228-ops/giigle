@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<style>
+html, body{
+    margin:0;
+    padding:0;
+    background:white;
+    width:100%;
+    height:100%;
+}
+
+/* 整個頁面 */
+.page{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    max-width:390px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+/* 背景圖完整塞進畫面，不裁切 */
+.bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+/* 透明點擊區域 */
+.link{
+    position:absolute;
+
+    top:54.5%;
+    left:5%;
+    width:95%;
+    height:6%;
+
+    display:block;
+}
+.link:active{
+    background:rgba(0,0,0,0.08);
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+    <img src="ui.png" class="bg">
+    <a href="choco.html" class="link"></a>
+</div>
+
+</body>
+</html>
