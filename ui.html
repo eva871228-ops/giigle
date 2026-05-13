@@ -7,75 +7,50 @@
 content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <style>
-
 html, body{
     margin:0;
     padding:0;
     background:white;
-    width:100%;
-    height:100%;
-    overflow:hidden;
 }
 
 /* 整個頁面 */
-
 .page{
     position:relative;
-
     width:100vw;
     max-width:390px;
-
-    height:100vh;
-
-    margin:auto;
-
-    overflow:hidden;
+    margin:0 auto;
 }
 
 /* 背景圖 */
-
 .bg{
     width:100%;
     display:block;
-
-    /* 往上微調 */
-    transform:translateY(-20px);
 }
 
 /* 第二個搜尋結果點擊區域 */
-
 .link{
-
     position:absolute;
 
-    top:60%;
-    left:0%;
-
+    top:57.5%;
+    left:2%;
     width:98%;
-    height:6.5%;
+    height:6.3%;
 
     display:block;
-
     border-radius:12px;
 }
-
-/* 點擊時效果 */
 
 .link:active{
     background:rgba(0,0,0,0.08);
 }
-
 </style>
 </head>
 
 <body>
 
 <div class="page">
-
-<img src="ui.png" class="bg">
-
-<a href="choco.html" class="link"></a>
-
+    <img src="ui.png" class="bg">
+    <a href="choco.html" class="link"></a>
 </div>
 
 </body>
